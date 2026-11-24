@@ -1,0 +1,17 @@
+{
+  "name": "biome-catch-default-generic-noUnnecessaryConditions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "biome lint src",
+    "typecheck": "tsc",
+    "oxlint": "oxlint --type-aware -A all -D typescript/no-unnecessary-condition src",
+    "eslint": "npm --prefix eslint ci && eslint/node_modules/.bin/eslint src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.9",
+    "typescript": "7.0.2",
+    "oxlint": "1.95.0",
+    "oxlint-tsgolint": "7.0.2008"
+  }
+}
